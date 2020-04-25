@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="CSSPage-Styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="WEBHOME.HTML">Home</a></li>
+            <li><a href="OFFICIALHTML.html">HTML</a></li>
+            <li><a class="active" href="CSS.html">CSS</a></li>
+            <li><a href="FinalJavascript.html">Javascript</a></li>
+            <li><a href="carona.html">Carona</a></li>
+            <li><a href="AboutMe.html">About us</a></li>
+        </ul>
+    </div>
+    <div class="info">
+        <h1>History</h1>
+        <p>CSS took many years to appear in the world. The first ever websites had no way of differentiating from each other due to the fact that they all looked very similar. There were many initial concepts of styling. One such was from
+            <a href="https://en.wikipedia.org/wiki/Pei-Yuan_Wei">Pei-Yuan Wei,</a> who created the graphical
+            <a href="https://en.wikipedia.org/wiki/ViolaWWW">ViolaWWW </a>Browser in 1991. He incorporated his own stylesheet language right into his browser.
+        </p>
+        <img src="https://i1.wp.com/css-tricks.com/wp-content/uploads/2017/10/screengrab_css-violaWWW.png?ssl=1" alt="ViolaWWW">
+        <figure>
+            <figcaption>Fig.3 - ViolaWWW</figcaption>
+        </figure>
+        <p>
+            Another approach was from <a href="https://en.wikipedia.org/wiki/Marc_Andreessen">Marc Andreessen</a> in 1994. He was the founder behind both the Mosaic and Netscape browsers. His extended HTML to include tags that allowed for presentational
+            and visual features. However this failed because it wasn't much of an improvement from ViolaWWW browser.
+
+        </p>
+        <h3>Birth Of CSS</h3>
+        <p>
+            The concept that stuck out from its competitors was first proposed by <a href="https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie">Håkon Wium Lie</a> in October of 1994. It was called Cascading Style Sheets(CSS). It meant that styles can inherit
+            and overwrite other styles that had previously been declared following a fairly complicated hierarchy known as specificity. This also meant web developers were allowed multiple stysheets in one page. This was revolutionary as it gave web developers
+            a chance to make their websites stand out from each other.
+
+        </p>
+        <img src="https://www.bitdegree.org/learn/storage/media/images/8c4493d3-110c-4a95-8b70-7626ce2d2f4e.jpg" alt="usual style attribute">
+        <figure>
+            <figcaption>Fig.4 - Examples of applying CSS</figcaption>
+        </figure>
+        <p>The above image shows different ways the user can apply CSS to their page.In the Inline css, the user declares the style attribute by typing style=. Then the user can add a property e.g colour and give that colour a value e.g red. If the user
+            wants to keep the styling separate to the rest of the items they can do internal CSS which requires you to create a style tag that groups all the styling. There is the other option of creating a seperate styling sheet. Modern CSS supports
+            a large array of style attributes the user can apply.
+        </p>
+        <br>
+        <h3>Seperating content from style</h3>
+        <p>
+            Separation of style from content is crucial in web design. For large websites its easier to open the CSS page corresponding to that page and make changes. It's much easier than searching for style attributes in a large HTML file epically when there could
+            be a combination of inline and internal CSS in the file. This separation helps with consistency by making it easier to maintain sites and share style sheets across pages. Another advantage of moving CSS styles to separate file is cacheability.
+            Browsers can cache style sheet file on client side, thus saving bandwidth and reducing loading time.
+        </p>
+
+        <h3>Selectors</h3>
+        <p>
+            To apply CSS we have to use selectors. CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors categories.
+        </p>
+        <p><b>Simple selectors:</b>These are selectors that select using id,class or certain element e.g #id and .info and img{}</p>
+        <p> <b>Combinator selectors:</b> A combinator is something that explain the relationship between the selectors. An example* of a combinator selector is "li a". This is all the anchor tags inside the list item
+        </p>
+        <p><b> Pseudo-class selectors: </b>CSS classes used to define the state of an element. An example* is "li a:hover:not(.active)" This allows certain states such as hovering over a link to be selected.
+        </p>
+        <p> <b>Pseudo-elements selectors:</b> A pseudo-elemet allows for a specific part of the element to be styled<br>
+            <code>
+            p::first-line {
+            color: blue;
+            text-transform: uppercase;
+            }
+            </code><br> The first line of every p element has the color blue and text uppercase applied
+        </p>
+        <p> <b>Attribute selectors:</b>This allows to select elements based on an attribute or attribute value. For example a[value="password"] allows for all anchor tags with value password to be styled.
+        </p>
+        <p>Note that examples marked with * are example taken directly from this page. You can see this by right clicking and inspecting element.
+        </p>
+        <br>
+    </div>
+
+
+</body>
+
+</html>

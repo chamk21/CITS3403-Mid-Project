@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(247, 253, 255);
+}
+
+#preinfo {
+    margin-left: 16%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: rgb(247, 253, 255);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar li a.active {
+    background-color: rgb(245, 139, 87);
+    color: white;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+h1 {
+    color: teal;
+}
+
+.image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+
+#totalsList {
+    list-style-type: none;
+}
+
+#CountryList {
+    list-style-type: square;
+}
+
+#viewbutton {
+    padding: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: teal;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#viewTotals {
+    padding: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: teal;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#viewbutton:active {
+    background-color: teal;
+    box-shadow: 0 5px #666;
+    transform: translateY(6px);
+}
+
+#viewTotals:active {
+    background-color: teal;
+    box-shadow: 0 5px #666;
+    transform: translateY(6px);
+}

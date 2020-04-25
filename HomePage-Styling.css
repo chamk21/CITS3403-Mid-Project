@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 20px;
+    background-image: url(https://lovelace-media.imgix.net/getty/509607832.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: scroll;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    size: 100px;
+    color: rgb(245, 139, 87);
+}
+
+img {
+    border-radius: 25%;
+}
+
+#maintitle {
+    font-size: 60px;
+}
+
+#slogan {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(245, 139, 87);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
